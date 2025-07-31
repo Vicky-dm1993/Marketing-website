@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Marketing Agency | Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-10">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-blue-600">MarketingPro</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-blue-600 font-medium">Home</a>
+                <a href="services.html" class="text-gray-700 hover:text-blue-600 transition duration-300">Services</a>
+                <a href="portfolio.html" class="text-gray-700 hover:text-blue-600 transition duration-300">Portfolio</a>
+                <a href="about.html" class="text-gray-700 hover:text-blue-600 transition duration-300">About</a>
+                <a href="contact.html" class="text-gray-700 hover:text-blue-600 transition duration-300">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-toggle" class="text-gray-700 focus:outline-none">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white px-6 py-4 shadow-md">
+            <div class="flex flex-col space-y-4">
+                <a href="index.html" class="text-blue-600 font-medium">Home</a>
+                <a href="services.html" class="text-gray-700 hover:text-blue-600 transition duration-300">Services</a>
+                <a href="portfolio.html" class="text-gray-700 hover:text-blue-600 transition duration-300">Portfolio</a>
+                <a href="about.html" class="text-gray-700 hover:text-blue-600 transition duration-300">About</a>
+                <a href="contact.html" class="text-gray-700 hover:text-blue-600 transition duration-300">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-12 md:pt-32 md:pb-20 bg-gradient-to-r from-blue-600 to-indigo-800 text-white">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-12 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-4">Transform Your Business with Digital Marketing</h1>
+                <p class="text-xl mb-8">We help businesses grow through innovative digital marketing strategies, AI solutions, and web development.</p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="services.html" class="bg-white text-blue-600 font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-gray-100 transition duration-300 text-center">Our Services</a>
+                    <a href="contact.html" class="bg-transparent border-2 border-white text-white font-bold py-3 px-6 rounded-lg hover:bg-white hover:text-blue-600 transition duration-300 text-center">Get Started</a>
+                </div>
+            </div>
+            <div class="md:w-1/2">
+                <img src="images/hero-image.svg" alt="Digital Marketing" class="w-full">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Why Choose Us</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">We combine cutting-edge technology with proven marketing strategies to deliver exceptional results for our clients.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-chart-line text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Data-Driven Approach</h3>
+                    <p class="text-gray-600">We make decisions based on comprehensive data analysis to ensure maximum ROI for your marketing campaigns.</p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-robot text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">AI-Powered Solutions</h3>
+                    <p class="text-gray-600">Leverage the power of artificial intelligence to automate and optimize your marketing efforts.</p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-users text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Expert Team</h3>
+                    <p class="text-gray-600">Our team of marketing specialists, developers, and AI experts work together to deliver comprehensive solutions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Our Services</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Comprehensive digital marketing and technology solutions to help your business thrive in the digital age.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- SEO Service -->
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-search text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">SEO Optimization</h3>
+                    <p class="text-gray-600 mb-4">Improve your website's visibility in search engines and drive organic traffic to your business.</p>
+                    <a href="services.html#seo" class="text-blue-600 font-medium hover:text-blue-800 transition duration-300">Learn More →</a>
+                </div>
+                <!-- Marketing Service -->
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-bullhorn text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Digital Marketing</h3>
+                    <p class="text-gray-600 mb-4">Comprehensive marketing strategies across multiple digital channels to reach your target audience.</p>
+                    <a href="services.html#marketing" class="text-blue-600 font-medium hover:text-blue-800 transition duration-300">Learn More →</a>
+                </div>
+                <!-- Automation Service -->
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-cogs text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Marketing Automation</h3>
+                    <p class="text-gray-600 mb-4">Streamline your marketing processes and improve efficiency with automated workflows.</p>
+                    <a href="services.html#automation" class="text-blue-600 font-medium hover:text-blue-800 transition duration-300">Learn More →</a>
+                </div>
+                <!-- AI Agent Service -->
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-brain text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">AI Agents</h3>
+                    <p class="text-gray-600 mb-4">Implement intelligent AI agents to enhance customer experience and automate complex tasks.</p>
+                    <a href="services.html#ai-agents" class="text-blue-600 font-medium hover:text-blue-800 transition duration-300">Learn More →</a>
+                </div>
+                <!-- Website Development Service -->
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-laptop-code text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Website Development</h3>
+                    <p class="text-gray-600 mb-4">Custom website design and development tailored to your business needs and goals.</p>
+                    <a href="services.html#web-development" class="text-blue-600 font-medium hover:text-blue-800 transition duration-300">Learn More →</a>
+                </div>
+                <!-- Content Creation Service -->
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-pen-fancy text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Content Creation</h3>
+                    <p class="text-gray-600 mb-4">High-quality, engaging content that resonates with your audience and drives conversions.</p>
+                    <a href="services.html#content" class="text-blue-600 font-medium hover:text-blue-800 transition duration-300">Learn More →</a>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="services.html" class="bg-blue-600 text-white font-bold py-3 px-8 rounded-lg shadow-lg hover:bg-blue-700 transition duration-300 inline-block">View All Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why We Are Best Section -->
+    <section class="py-16 bg-gradient-to-r from-blue-600 to-indigo-800 text-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Why We Are The Best In The Industry</h2>
+                <p class="max-w-2xl mx-auto">Our proven track record and innovative approach set us apart from the competition.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="flex flex-col justify-center">
+                    <div class="mb-8">
+                        <h3 class="text-xl font-bold mb-3">Proven Results</h3>
+                        <p>We've helped hundreds of businesses achieve significant growth through our tailored marketing strategies.</p>
+                    </div>
+                    <div class="mb-8">
+                        <h3 class="text-xl font-bold mb-3">Cutting-Edge Technology</h3>
+                        <p>We stay ahead of the curve by leveraging the latest technologies and AI innovations in our solutions.</p>
+                    </div>
+                    <div class="mb-8">
+                        <h3 class="text-xl font-bold mb-3">Transparent Reporting</h3>
+                        <p>We provide detailed, easy-to-understand reports so you can see exactly how your campaigns are performing.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-3">Dedicated Support</h3>
+                        <p>Our team is always available to answer your questions and provide guidance throughout our partnership.</p>
+                    </div>
+                </div>
+                <div class="flex items-center justify-center">
+                    <img src="images/stats-graphic.svg" alt="Performance Statistics" class="w-full max-w-md">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">What Our Clients Say</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Don't just take our word for it. Here's what our clients have to say about working with us.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md">
+                    <div class="text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 mb-6">"Working with MarketingPro transformed our online presence. Their SEO strategies helped us rank for competitive keywords, and our organic traffic has increased by 200% in just six months."</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full bg-gray-300 mr-4"></div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Sarah Johnson</h4>
+                            <p class="text-gray-600">CEO, TechStart Inc.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md">
+                    <div class="text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 mb-6">"The AI-powered marketing automation solution they implemented has saved us countless hours and improved our lead conversion rate by 45%. Their team is knowledgeable, responsive, and a pleasure to work with."</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full bg-gray-300 mr-4"></div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Michael Chen</h4>
+                            <p class="text-gray-600">Marketing Director, GrowthFirm</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md">
+                    <div class="text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 mb-6">"Our new website not only looks fantastic but also performs exceptionally well. The user experience has improved significantly, and we've seen a 70% increase in conversion rate since the launch."</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full bg-gray-300 mr-4"></div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Emily Rodriguez</h4>
+                            <p class="text-gray-600">Owner, StyleBoutique</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subscribe Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="max-w-3xl mx-auto bg-white p-8 md:p-12 rounded-lg shadow-md">
+                <div class="text-center mb-8">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4">Stay Updated</h2>
+                    <p class="text-gray-600">Subscribe to our newsletter for the latest marketing tips, industry insights, and exclusive offers.</p>
+                </div>
+                <form id="subscribe-form" class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
+                    <input type="email" placeholder="Your email address" class="flex-grow px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600" required>
+                    <button type="submit" class="bg-blue-600 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:bg-blue-700 transition duration-300">Subscribe</button>
+                </form>
+                <p class="text-gray-500 text-sm mt-4 text-center">We respect your privacy. Unsubscribe at any time.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">MarketingPro</h3>
+                    <p class="text-gray-400">Transforming businesses through innovative digital marketing strategies and technology solutions.</p>
+                    <div class="flex space-x-4 mt-6">
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition duration-300">Services</a></li>
+                        <li><a href="portfolio.html" class="text-gray-400 hover:text-white transition duration-300">Portfolio</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition duration-300">About Us</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="services.html#seo" class="text-gray-400 hover:text-white transition duration-300">SEO Optimization</a></li>
+                        <li><a href="services.html#marketing" class="text-gray-400 hover:text-white transition duration-300">Digital Marketing</a></li>
+                        <li><a href="services.html#automation" class="text-gray-400 hover:text-white transition duration-300">Marketing Automation</a></li>
+                        <li><a href="services.html#ai-agents" class="text-gray-400 hover:text-white transition duration-300">AI Agents</a></li>
+                        <li><a href="services.html#web-development" class="text-gray-400 hover:text-white transition duration-300">Website Development</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Contact Us</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-2"></i>
+                            <span>123 Marketing St, Digital City, DC 12345</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-2"></i>
+                            <span>(123) 456-7890</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-2"></i>
+                            <span>info@marketingpro.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-10 pt-6 text-center text-gray-400">
+                <p>&copy; 2023 MarketingPro. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

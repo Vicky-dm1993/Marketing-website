@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Portfolio | Digital Marketing Agency</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-10">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-blue-600">MarketingPro</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-gray-700 hover:text-blue-600 transition duration-300">Home</a>
+                <a href="services.html" class="text-gray-700 hover:text-blue-600 transition duration-300">Services</a>
+                <a href="portfolio.html" class="text-blue-600 font-medium">Portfolio</a>
+                <a href="about.html" class="text-gray-700 hover:text-blue-600 transition duration-300">About</a>
+                <a href="contact.html" class="text-gray-700 hover:text-blue-600 transition duration-300">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-toggle" class="text-gray-700 focus:outline-none">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white px-6 py-4 shadow-md">
+            <div class="flex flex-col space-y-4">
+                <a href="index.html" class="text-gray-700 hover:text-blue-600 transition duration-300">Home</a>
+                <a href="services.html" class="text-gray-700 hover:text-blue-600 transition duration-300">Services</a>
+                <a href="portfolio.html" class="text-blue-600 font-medium">Portfolio</a>
+                <a href="about.html" class="text-gray-700 hover:text-blue-600 transition duration-300">About</a>
+                <a href="contact.html" class="text-gray-700 hover:text-blue-600 transition duration-300">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="pt-24 pb-12 md:pt-32 md:pb-20 bg-gradient-to-r from-blue-600 to-indigo-800 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Our Portfolio</h1>
+            <p class="text-xl max-w-3xl mx-auto">Explore our successful projects and see how we've helped businesses achieve their goals through innovative digital marketing strategies and technology solutions.</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Categories -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-wrap justify-center mb-8">
+                <button class="portfolio-filter-btn active m-2 px-6 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition duration-300" data-filter="all">All</button>
+                <button class="portfolio-filter-btn m-2 px-6 py-2 bg-gray-200 text-gray-700 rounded-full hover:bg-blue-600 hover:text-white transition duration-300" data-filter="seo">SEO</button>
+                <button class="portfolio-filter-btn m-2 px-6 py-2 bg-gray-200 text-gray-700 rounded-full hover:bg-blue-600 hover:text-white transition duration-300" data-filter="marketing">Digital Marketing</button>
+                <button class="portfolio-filter-btn m-2 px-6 py-2 bg-gray-200 text-gray-700 rounded-full hover:bg-blue-600 hover:text-white transition duration-300" data-filter="automation">Automation</button>
+                <button class="portfolio-filter-btn m-2 px-6 py-2 bg-gray-200 text-gray-700 rounded-full hover:bg-blue-600 hover:text-white transition duration-300" data-filter="ai">AI Solutions</button>
+                <button class="portfolio-filter-btn m-2 px-6 py-2 bg-gray-200 text-gray-700 rounded-full hover:bg-blue-600 hover:text-white transition duration-300" data-filter="web">Web Development</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="pb-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="portfolio-item seo" data-category="seo">
+                    <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+                        <div class="relative">
+                            <img src="images/portfolio/project1.jpg" alt="SEO Project" class="w-full h-64 object-cover">
+                            <div class="absolute inset-0 bg-blue-600 bg-opacity-70 flex items-center justify-center opacity-0 hover:opacity-100 transition duration-300">
+                                <a href="#project1-modal" class="view-project-btn text-white font-bold py-2 px-6 rounded-lg border-2 border-white hover:bg-white hover:text-blue-600 transition duration-300">View Project</a>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">E-commerce SEO Optimization</h3>
+                            <p class="text-gray-600 mb-4">Increased organic traffic by 200% for an online retail store through comprehensive SEO strategies.</p>
+                            <div class="flex flex-wrap">
+                                <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded mr-2 mb-2">SEO</span>
+                                <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded mr-2 mb-2">Content Strategy</span>
+                                <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded mr-2 mb-2">Technical SEO</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="portfolio-item marketing" data-category="marketing">
+                    <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+                        <div class="relative">
+                            <img src="images/portfolio/project2.jpg" alt="Digital Marketing Project" class="w-full h-64 object-cover">
+                            <div class="absolute inset-0 bg-blue-600 bg-opacity-70 flex items-center justify-center opacity-0 hover:opacity-100 transition duration-300">
+                                <a href="#project2-modal" class="view-project-btn text-white font-bold py-2 px-6 rounded-lg border-2 border-white hover:bg-white hover:text-blue-600 transition duration-300">View Project</a>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Multi-Channel Marketing Campaign</h3>
+                            <p class="text-gray-600 mb-4">Developed and executed a comprehensive marketing campaign across social media, email, and PPC for a SaaS company.</p>
+                            <div class="flex flex-wrap">
+                                <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded mr-2 mb-2">Social Media</span>
+                                <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded mr-2 mb-2">Email Marketing</span>
+                                <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded mr-2 mb-2">PPC</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="portfolio-item automation" data-category="automation">
+                    <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+                        <div class="relative">
+                            <img src="images/portfolio/project3.jpg" alt="Marketing Automation Project" class="w-full h-64 object-cover">
+                            <div class="absolute inset-0 bg-blue-600 bg-opacity-70 flex items-center justify-center opacity-0 hover:opacity-100 transition duration-300">
+                                <a href="#project3-modal" class="view-project-btn text-white font-bold py-2 px-6 rounded-lg border-2 border-white hover:bg-white hover:text-blue-600 transition duration-300">View Project</a>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Lead Nurturing Automation</h3>
+                            <p class="text-gray-600 mb-4">Implemented an automated lead nurturing system that increased conversion rates by 45% for a B2B company.</p>
+                            <div class="flex flex-wrap">
+                                <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded mr-2 mb-2">Marketing Automation</span>
+                                <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded mr-2 mb-2">CRM Integration</span>
+                                <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded mr-2 mb-2">Email Sequences</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="portfolio-item ai" data-category="ai">
+                    <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+                        <div class="relative">
+                            <img src="images/portfolio/project4.jpg" alt="AI Project" class="w-full h-64 object-cover">
+                            <div class="absolute inset-0 bg-blue-600 bg-opacity-70 flex items-center justify-center opacity-0 hover:opacity-100 transition duration-300">
+                                <a href="#project4-modal" class="view-project-btn text-white font-bold py-2 px-6 rounded-lg border-2 border-white hover:bg-white hover:text-blue-600 transition duration-300">View Project</a>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">AI-Powered Customer Support</h3>
+                            <p class="text-gray-600 mb-4">Developed an AI chatbot that reduced customer support response time by 80% and improved customer satisfaction.</p>
+                            <div class="flex flex-wrap">
+                                <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded mr-2 mb-2">AI</span>
+                                <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded mr-2 mb-2">Chatbot</span>
+                                <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded mr-2 mb-2">Customer Support</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="portfolio-item web" data-category="web">
+                    <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+                        <div class="relative">
+                            <img src="images/portfolio/project5.jpg" alt="Web Development Project" class="w-full h-64 object-cover">
+                            <div class="absolute inset-0 bg-blue-600 bg-opacity-70 flex items-center justify-center opacity-0 hover:opacity-100 transition duration-300">
+                                <a href="#project5-modal" class="view-project-btn text-white font-bold py-2 px-6 rounded-lg border-2 border-white hover:bg-white hover:text-blue-600 transition duration-300">View Project</a>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">E-commerce Website Redesign</h3>
+                            <p class="text-gray-600 mb-4">Redesigned an e-commerce website that improved user experience and increased conversion rates by 70%.</p>
+                            <div class="flex flex-wrap">
+                                <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded mr-2 mb-2">Web Development</span>
+                                <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded mr-2 mb-2">UI/UX Design</span>
+                                <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded mr-2 mb-2">E-commerce</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="portfolio-item seo marketing" data-category="seo marketing">
+                    <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+                        <div class="relative">
+                            <img src="images/portfolio/project6.jpg" alt="SEO and Marketing Project" class="w-full h-64 object-cover">
+                            <div class="absolute inset-0 bg-blue-600 bg-opacity-70 flex items-center justify-center opacity-0 hover:opacity-100 transition duration-300">
+                                <a href="#project6-modal" class="view-project-btn text-white font-bold py-2 px-6 rounded-lg border-2 border-white hover:bg-white hover:text-blue-600 transition duration-300">View Project</a>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Integrated Digital Strategy</h3>
+                            <p class="text-gray-600 mb-4">Developed a comprehensive digital strategy combining SEO and content marketing for a financial services firm.</p>
+                            <div class="flex flex-wrap">
+                                <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded mr-2 mb-2">SEO</span>
+                                <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded mr-2 mb-2">Content Marketing</span>
+                                <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded mr-2 mb-2">Strategy</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modals -->
+    <!-- Project 1 Modal -->
+    <div id="project1-modal" class="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center hidden">
+        <div class="bg-white rounded-lg max-w-4xl w-full max-h-screen overflow-y-auto">
+            <div class="p-6">
+                <div class="flex justify-between items-center mb-6">
+                    <h2 class="text-2xl font-bold text-gray-800">E-commerce SEO Optimization</h2>
+                    <button class="close-modal text-gray-500 hover:text-gray-700 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                        </svg>
+                    </button>
+                </div>
+                <img src="images/portfolio/project1-large.jpg" alt="SEO Project" class="w-full h-auto rounded-lg mb-6">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+                    <div>
+                        <h3 class="text-lg font-bold text-gray-800 mb-2">Client</h3>
+                        <p class="text-gray-600">FashionRetail Inc.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold text-gray-800 mb-2">Timeline</h3>
+                        <p class="text-gray-600">6 months</p>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold text-gray-800 mb-2">Services</h3>
+                        <p class="text-gray-600">SEO, Content Strategy, Technical SEO</p>
+                    </div>
+                </div>
+                <div class="mb-6">
+                    <h3 class="text-lg font-bold text-gray-800 mb-2">Project Overview</h3>
+                    <p class="text-gray-600 mb-4">FashionRetail Inc., an established online clothing retailer, was struggling with declining organic traffic and search engine rankings. They approached us to develop and implement a comprehensive SEO strategy to improve their visibility in search results and drive more qualified traffic to their website.</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="text-lg font-bold text-gray-800 mb-2">Challenge</h3>
+                    <p class="text-gray-600 mb-4">The client faced several challenges, including:</p>
+                    <ul class="list-disc pl-6 text-gray-600 space-y-2">
+                        <li>Declining organic traffic despite having quality products</li>
+                        <li>Poor technical SEO implementation causing indexing issues</li>
+                        <li>Lack of optimized content for target keywords</li>
+                        <li>Strong competition in a crowded e-commerce fashion market</li>
+                    </ul>
+                </div>
+                <div class="mb-6">
+                    <h3 class="text-lg font-bold text-gray-800 mb-2">Solution</h3>
+                    <p class="text-gray-600 mb-4">We developed a multi-faceted SEO strategy that included:</p>
+                    <ul class="list-disc pl-6 text-gray-600 space-y-2">
+                        <li>Comprehensive technical SEO audit and implementation of fixes</li>
+                        <li>Keyword research and content optimization for product pages</li>
+                        <li>Development of a content marketing strategy targeting fashion-related keywords</li>
+                        <li>Implementation of schema markup for products to enhance search results</li>
+                        <li>Internal linking structure optimization</li>
+                        <li>Mobile optimization to improve user experience</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-2">Results</h3>
+                    <ul class="list-disc pl-6 text-gray-600 space-y-2">
+                        <li>200% increase in organic traffic within 6 months</li>
+                        <li>First page rankings for over 100 target keywords</li>
+                        <li>45% increase in organic conversions</li>
+                        <li>Improved site speed by 60%, enhancing user experience</li>
+                        <li>30% reduction in bounce rate</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-gradient-to-r from-blue-600 to-indigo-800 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-6">Ready to Start Your Project?</h2>
+            <p class="text-xl max-w-3xl mx-auto mb-8">Contact us today to discuss how we can help you achieve your business goals through innovative digital marketing strategies and technology solutions.</p>
+            <a href="contact.html" class="bg-white text-blue-600 font-bold py-3 px-8 rounded-lg shadow-lg hover:bg-gray-100 transition duration-300 inline-block">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">MarketingPro</h3>
+                    <p class="text-gray-400">Transforming businesses through innovative digital marketing strategies and technology solutions.</p>
+                    <div class="flex space-x-4 mt-6">
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition duration-300">Services</a></li>
+                        <li><a href="portfolio.html" class="text-gray-400 hover:text-white transition duration-300">Portfolio</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition duration-300">About Us</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="services.html#seo" class="text-gray-400 hover:text-white transition duration-300">SEO Optimization</a></li>
+                        <li><a href="services.html#marketing" class="text-gray-400 hover:text-white transition duration-300">Digital Marketing</a></li>
+                        <li><a href="services.html#automation" class="text-gray-400 hover:text-white transition duration-300">Marketing Automation</a></li>
+                        <li><a href="services.html#ai-agents" class="text-gray-400 hover:text-white transition duration-300">AI Agents</a></li>
+                        <li><a href="services.html#web-development" class="text-gray-400 hover:text-white transition duration-300">Website Development</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Contact Us</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-2"></i>
+                            <span>123 Marketing St, Digital City, DC 12345</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-2"></i>
+                            <span>(123) 456-7890</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-2"></i>
+                            <span>info@marketingpro.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-10 pt-6 text-center text-gray-400">
+                <p>&copy; 2023 MarketingPro. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
